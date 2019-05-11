@@ -8,6 +8,10 @@
   height:100%;
   margin:0 auto;
 }
+/* リンクタブの下線を消す */
+a{
+  text-decoration: none;
+}
 .header{
   background-color:#fff;
 }
@@ -18,18 +22,16 @@
   z-index:1;  /*要素を一番上に持ってくる */
   overflow: hidden;
   width:100%;
-  padding:15px 0;
 }
 .header_wrap_content{
-  margin:15px 0 15px 0;
+  padding:15px 0;
 }
 .header .fa-bolt {
-  
   float:left;
   opacity: 0.5;
   font-size:30px;
 }
-.header__botton {
+.header_botton  {
   background-color: #74cfae;
   color:white;
   font-size:12px;
@@ -38,12 +40,16 @@
   float:right;
   cursor: pointer;
 }
+.header_botton:hover{
+  color:#333;
+  transition:0.3s;
+}
 .nav{
   background-color: #f2f2f2;
   text-align: center;
 }
 .nav_wrap{
-  padding:250px 0 250px 0;
+  padding:250px 0;
 }
 .nav_theme_text{
   color:#74cfae;
@@ -66,7 +72,6 @@
   text-align: center;
   padding-top:50px;
 }
-
 .main_wrap_left{
   float:left;  
 }
@@ -119,11 +124,8 @@
   transition:0.3s;
   opacity:1;  
 }
-.main__content img :nth-child(n+3){
-}
 .article_footer{
   padding:90px 0 70px 0;
-  margin:0 auto;
 }
 .article_footer_wrap{
   padding-left:100px;
@@ -134,7 +136,6 @@
   text-align: center;
   opacity: 0.5;
   width:67%;
-  
 }
 .article_footer_botton {
   background-color:#74cfae;
@@ -156,7 +157,6 @@
 .section_wrap{
   padding:70px 0 100px 0;
   text-align: center;
-  /* font-size:0; */
 }
 .section_wrap_content li{
   display:inline-block;
@@ -168,10 +168,10 @@
   padding-bottom:60px;
 }
 .section_wrap_content li {
-  padding-left:180px;
+  margin-left:180px;
 }
 .section_wrap_content li:first-child{
-  padding-left:0;
+  margin-left:0;
 }
 .section_wrap_content_text{
   color:white;
@@ -180,13 +180,11 @@
 }
 .figure{
   background-color:#f2f2f2;
-  text-align: center;
-}
-.figure_icon{
+text-align: center;}
+.figure.bolt_inner{
   padding:200px 0;
-
 }
-.figure_icon i{
+.figure_icon a{
   font-size:50px;
   width:185px;
   height:100%;
@@ -198,12 +196,13 @@
   transition:0.3s;
   cursor : pointer;
 }
+.footer_bolt_inner{
+  width:1100px;
+  height:100%;
+  margin:0 auto;
+}
 .footer{
   background-color: #74cfae;
-  width:100%;
-}
-.footer_wrap{
-  background-color:#74cfae;
   width:100%;
 }
 .footer_wrap_text{
