@@ -1,3 +1,16 @@
+/*  リンクタブの下線を消す */
+a{
+  text-decoration: none;
+}
+img{
+  vertical-align: middle;
+}
+.body{
+  font-family: 'Lato';
+}
+.is-raleway{
+  font-family: 'Raleway';
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -5,28 +18,19 @@
 }
 .bolt_inner{
   width:1100px;
-  height:100%;
   margin:0 auto;
 }
-/* リンクタブの下線を消す */
-a{
-  text-decoration: none;
-}
-.header{
+header{
   background-color:#fff;
-}
-.header_wrap{
   position: fixed;
   top:0;
   left:0;
   z-index:1;  /*要素を一番上に持ってくる */
   overflow: hidden;
   width:100%;
-}
-.header_wrap_content{
   padding:15px 0;
 }
-.header .fa-bolt {
+header .fa-bolt{
   float:left;
   opacity: 0.5;
   font-size:30px;
@@ -39,16 +43,15 @@ a{
   padding:14px 12px ;  
   float:right;
   cursor: pointer;
+  transition: 0.3s;
 }
 .header_botton:hover{
   color:#333;
   transition:0.3s;
 }
-.nav{
+nav{
   background-color: #f2f2f2;
   text-align: center;
-}
-.nav_wrap{
   padding:250px 0;
 }
 .nav_theme_text{
@@ -61,14 +64,8 @@ a{
   color:#c0c0c0;
   margin-top:20px;
 }
-.main{
+main{
   background-color: #74cfae;
-}
-.main_wrap{
-  background-color: #74cfae;
-  margin:0 auto;
-}
-.main_wrap_inner{
   text-align: center;
   padding-top:50px;
 }
@@ -85,57 +82,57 @@ a{
   font-size:24px;
 }
 .main_wrap_right-down{
-  padding-top:35px;
+  margin-top:35px;
 }
 .main_wrap_right-down-text{
   font-size:20px;
   color:white;
   word-break: break-all;
 }
-.article{
+article{
   background-color: #f2f2f2;
+  padding:60px 0 70px 0;
 }
-.article_wrap {
-}
-.article h2{
+article h2{
   font-size:24px;
   text-align: center;
-  padding:60px 0 40px 0;
+  margin-bottom:40px;
 }
 .article_wrap li {
-  padding-left:100px;
+  margin-left:100px;
   float:left;
 }
-.article_wrap li:first-child{
-  padding-left:0;
-}
+
 /* 擬似要素　ntn-child(数式) */
-.article_wrap li:nth-child(4){
-  padding-left:0;
+.article_wrap li:nth-child(3n+1){
+  margin-left:0;
 }
 /* 要素３以下を指定したい場合は(-n+3で指定する) */
 .article_wrap li:nth-child(-n+3){
-  padding-bottom:80px;
+  margin-bottom:80px;
 }
 .article_wrap li img{
   opacity: 0.7;
+  transition: 0.3s;
 }
 .article_wrap li :hover{
   transition:0.3s;
   opacity:1;  
 }
 .article_footer{
-  padding:90px 0 70px 0;
+  margin-top:90px;
 }
 .article_footer_wrap{
   padding-left:100px;
+  width:100%;
 }
 .article_footer_text{
   font-size:20px;
   float:left;
   text-align: center;
   opacity: 0.5;
-  width:67%;
+  width:660px;
+  margin:0 90px;
 }
 .article_footer_botton {
   background-color:#74cfae;
@@ -143,7 +140,8 @@ a{
   font-size:12px;
   padding:14px 20px;
   font-weight: bold; 
-  margin-left:90px;
+  transition: 0.3s;
+  float:left;
 }
 .article_footer_botton:hover{
   background-color:#74cfae;
@@ -151,15 +149,14 @@ a{
   transition:0.3s;
   cursor : pointer;
 }
-.section{
+section{
   background-color: #4e4e4e;
-}
-.section_wrap{
   padding:70px 0 100px 0;
   text-align: center;
 }
-.section_wrap_content li{
+.section_wrap li{
   display:inline-block;
+  margin-left:180px;
 }
 .section_text{
   text-align: center;
@@ -167,43 +164,35 @@ a{
   font-size:24px;
   padding-bottom:60px;
 }
-.section_wrap_content li {
-  margin-left:180px;
-}
-.section_wrap_content li:first-child{
+.section_wrap li:first-child{
   margin-left:0;
 }
-.section_wrap_content_text{
+.section_wrap_text{
   color:white;
   text-align: center;
   font-size:16px;
+  margin-top:15px;
 }
-.figure{
+figure{
   background-color:#f2f2f2;
-text-align: center;}
-.figure.bolt_inner{
+  text-align: center;
   padding:200px 0;
 }
-.figure_icon a{
+.figure_icon_link {
   font-size:50px;
   width:185px;
-  height:100%;
-  padding:20px;
+  padding:30px;
   color:#74cfae;
+  transition: 0.3s;
+  display:inline-block; 
 }
-.figure_icon :hover{
+.figure_icon_link:hover{
   background-color:white;
   transition:0.3s;
   cursor : pointer;
 }
-.footer_bolt_inner{
-  width:1100px;
-  height:100%;
-  margin:0 auto;
-}
-.footer{
+footer{
   background-color: #74cfae;
-  width:100%;
 }
 .footer_wrap_text{
   color:white;
