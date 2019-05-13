@@ -74,10 +74,11 @@ a{
 }
 .main_wrap_left{
   float:left;  
+  width:350px;
 }
 .main_wrap_right{
-  width:780px;
   float:right;
+  width:750px;
 }
 .main_wrap_right-up-text {
   color:white;
@@ -89,8 +90,7 @@ a{
 .main_wrap_right-down-text{
   font-size:20px;
   color:white;
-  text-align: center;
-  word-break: keep-all;
+  word-break: break-all;
 }
 .article{
   background-color: #f2f2f2;
