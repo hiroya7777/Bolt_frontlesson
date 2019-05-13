@@ -102,8 +102,7 @@ article h2{
   margin-left:100px;
   float:left;
 }
-
-/* 擬似要素　ntn-child(数式) */
+/* 擬似要素　ntn-child(数式) 3n+1=1,4,7,10番目の要素にcssが当たる */
 .article_wrap li:nth-child(3n+1){
   margin-left:0;
 }
@@ -121,10 +120,6 @@ article h2{
 }
 .article_footer{
   margin-top:90px;
-}
-.article_footer_wrap{
-  padding-left:100px;
-  width:100%;
 }
 .article_footer_text{
   font-size:20px;
