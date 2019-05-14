@@ -214,3 +214,137 @@ header .fa-bolt{
   color:white;
   text-align: right;
 }
+@media screen and  (max-width:1200px){
+.bolt_inner{
+  width:97%;
+  margin:0 auto;
+}
+.about_inner{
+  padding:50px 0 25px 0;
+  margin:0 auto;
+}
+.about_wrap_left{
+  float:none;
+  width:100%;
+}
+.about_wrap_right{
+  float:none;
+  width:100%
+}
+.about_wrap_right_text {
+  color:white;
+  font-size:24px;
+  margin:20px 0 35px 0;
+}
+.about_wrap_right-down-text{
+  font-size:20px;
+  color:white;
+  word-break: break-all;
+}
+.works_inner{
+  width:97%;
+}
+.works-inner__images{
+  margin:40px 0 80px;
+  font-size: 0;
+}
+.works-inner__image{
+  margin-left:0;
+  display:block;
+}
+.works-inner__image:nth-child(n+4){
+  margin-top:0;
+}
+.works-inner__image:nth-child(4){
+  margin-top:80px;
+}
+.works-inner__bottom_content{
+  text-align:center;
+}
+.works-inner__bottom_text{
+  float:none;
+  display:block;
+  width:100%;
+  margin:0 0 40px 0;
+}
+.works-inner__bottom_btn{
+  float:none;
+  display:inline-block;
+}
+.works-inner__bottom_btn-text{
+  background-color:#74cfae;
+  color:#fff;
+  font-size:12px;
+  padding:14px 20px;
+  text-decoration: none;
+  transition:all .3s;
+}
+.works-inner__bottom_btn-text:hover {
+  color:#333;
+}
+.skill_inner{
+  width:97%;
+}
+.skill_wrap li{
+  display:block;
+  margin:88px 0;
+}
+.skill_wrap li:first-child{
+  margin-top:0;
+}
+.skill_wrap li:last-child{
+  margin-bottom:0;
+}
+}
+@media screen and (max-width:767px) {
+  .bolt_inner{
+  width:97%;
+  margin:0 auto;
+}
+.header_inner{
+  width:97%;
+}
+.humberger {
+  display:block;
+  padding:10px;
+  border: 1px solid #ddd;
+  border-radius:4px;
+  box-sizing: border-box;
+  float:right;
+}
+.humberger div {
+  display:block;
+  width:24px;
+  height:3px;
+  background-color: #ddd;
+  margin-bottom:6px;
+}
+.humberger div:last-child{
+  margin-bottom:0;
+}
+.header_button{
+  display:none;
+}
+.theme_inner{
+  padding:160px 0 130px 0;
+}
+.theme_text{
+  font-size:80px;
+}
+.sns{
+  background-color:#f2f2f2;
+  text-align: center;
+}
+.sns_inner{
+  width:97%;
+  padding:50px 15px;
+}
+.sns_icon_link {
+  text-align: center;
+}
+.sns_inner a{
+  display:block;
+  text-align: center;
+  width:100%;
+}
+}
